@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         //Display
         val viewtv=findViewById<TextView>(R.id.tvCalc)
-
+        val prev=findViewById<TextView>(R.id.perview)
         //opreators
         val divide=findViewById<Button>(R.id.divide)
         val multiply=findViewById<Button>(R.id.multiply)
@@ -70,6 +70,7 @@ class MainActivity : AppCompatActivity() {
         plus.setOnClickListener {
 
             firstno=viewtv.text.toString().toDouble()
+            prev.text=firstno.toString()
             operator="+"
             viewtv.text=""
 
@@ -77,6 +78,7 @@ class MainActivity : AppCompatActivity() {
         minus.setOnClickListener {
 
             firstno=viewtv.text.toString().toDouble()
+            prev.text=firstno.toString()
             operator="-"
             viewtv.text=""
 
@@ -84,6 +86,7 @@ class MainActivity : AppCompatActivity() {
         divide.setOnClickListener {
 
             firstno=viewtv.text.toString().toDouble()
+            prev.text=firstno.toString()
             operator="/"
             viewtv.text=""
 
@@ -91,6 +94,7 @@ class MainActivity : AppCompatActivity() {
         multiply.setOnClickListener {
 
             firstno=viewtv.text.toString().toDouble()
+            prev.text=firstno.toString()
             operator="*"
             viewtv.text=""
 
@@ -98,6 +102,7 @@ class MainActivity : AppCompatActivity() {
         mod.setOnClickListener {
 
             firstno=viewtv.text.toString().toDouble()
+            prev.text=firstno.toString()
             operator="%"
             viewtv.text=""
 
@@ -127,7 +132,7 @@ class MainActivity : AppCompatActivity() {
         equal.setOnClickListener {
 
             var secondno=viewtv.text.toString().toDouble()
-
+            prev.text=""
             var result=when(operator)
             {
                 "+"->firstno+secondno
