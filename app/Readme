@@ -1,0 +1,35 @@
+Numora is a simple and clean Android calculator app built using Kotlin in Android Studio. It allows users to perform basic arithmetic operations with a smooth and minimal user interface.
+
+Features
+Basic arithmetic operations (+, −, ×, ÷)
+Clean and simple UI
+Backspace support
+Real-time input display
+Error handling for invalid input
+Fast and lightweight performance
+Tech Stack
+Kotlin
+Android Studio
+XML (UI Design)
+Android SDK
+How It Works
+User enters numbers and operators using buttons
+Expression is displayed on screen
+Pressing "=" evaluates the expression and shows result
+Backspace removes last entered character
+Future Improvements
+Scientific calculator mode
+History of calculations
+Dark mode support
+More advanced expression parsing
+Screenshots
+
+(Add your app screenshots here)
+
+Installation
+Clone the repository
+Open in Android Studio
+Build and run on emulator or physical device
+Author
+
+Developed by Shivam
