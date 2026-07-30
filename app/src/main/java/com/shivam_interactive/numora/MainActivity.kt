@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         mainBinding.btndel.setOnClickListener {
-            
+
         }
         mainBinding.btnAC.setOnClickListener{
             mainBinding.textdisplay.text=""
