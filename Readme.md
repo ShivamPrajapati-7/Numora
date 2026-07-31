@@ -61,6 +61,18 @@ git clone https://github.com/ShivamPrajapati-7/Numora.git
 
 4. Build and run the application on an emulator or Android device.
 
+**OR**
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/ShivamPrajapati-7/Numora.git
+```
+
+2. There is APK file in Project Folder
+
+3. Install it and Enjoy
+
 ---
 
 ## 🎯 Future Improvements
