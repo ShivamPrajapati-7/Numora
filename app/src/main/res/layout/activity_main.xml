@@ -56,6 +56,7 @@
             android:layout_row="0"
             android:layout_column="0"
             android:layout_columnWeight="1"
+            android:backgroundTint="@color/btncolor"
             android:text="AC"
             android:textColor="@color/TextColor"
             android:textSize="24sp" />
@@ -67,6 +68,7 @@
             android:layout_row="0"
             android:layout_column="1"
             android:layout_columnWeight="1"
+            android:backgroundTint="@color/btncolor"
             android:text="Del"
             android:textColor="@color/TextColor"
             android:textSize="24sp" />
@@ -78,6 +80,7 @@
             android:layout_row="0"
             android:layout_column="2"
             android:layout_columnWeight="1"
+            android:backgroundTint="@color/btncolor"
             android:text="÷"
             android:textColor="@color/TextColor"
             android:textSize="24sp" />
@@ -89,6 +92,7 @@
             android:layout_row="0"
             android:layout_column="3"
             android:layout_columnWeight="1"
+            android:backgroundTint="@color/btncolor"
             android:text="*"
             android:textColor="@color/TextColor"
             android:textSize="24sp" />
@@ -100,6 +104,7 @@
             android:layout_row="1"
             android:layout_column="0"
             android:layout_columnWeight="1"
+            android:backgroundTint="@color/btncolor"
             android:text="7"
             android:textColor="@color/TextColor"
             android:textSize="24sp" />
@@ -111,6 +116,7 @@
             android:layout_row="1"
             android:layout_column="1"
             android:layout_columnWeight="1"
+            android:backgroundTint="@color/btncolor"
             android:text="8"
             android:textColor="@color/TextColor"
             android:textSize="24sp" />
@@ -122,6 +128,7 @@
             android:layout_row="1"
             android:layout_column="2"
             android:layout_columnWeight="1"
+            android:backgroundTint="@color/btncolor"
             android:text="9"
             android:textColor="@color/TextColor"
             android:textSize="24sp" />
@@ -133,6 +140,7 @@
             android:layout_row="1"
             android:layout_column="3"
             android:layout_columnWeight="1"
+            android:backgroundTint="@color/btncolor"
             android:text="-"
             android:textColor="@color/TextColor"
             android:textSize="24sp" />
@@ -144,6 +152,7 @@
             android:layout_row="2"
             android:layout_column="0"
             android:layout_columnWeight="1"
+            android:backgroundTint="@color/btncolor"
             android:text="4"
             android:textColor="@color/TextColor"
             android:textSize="24sp" />
@@ -155,6 +164,7 @@
             android:layout_row="2"
             android:layout_column="1"
             android:layout_columnWeight="1"
+            android:backgroundTint="@color/btncolor"
             android:text="5"
             android:textColor="@color/TextColor"
             android:textSize="24sp" />
@@ -166,6 +176,7 @@
             android:layout_row="2"
             android:layout_column="2"
             android:layout_columnWeight="1"
+            android:backgroundTint="@color/btncolor"
             android:text="6"
             android:textColor="@color/TextColor"
             android:textSize="24sp" />
@@ -177,6 +188,7 @@
             android:layout_row="2"
             android:layout_column="3"
             android:layout_columnWeight="1"
+            android:backgroundTint="@color/btncolor"
             android:text="+"
             android:textColor="@color/TextColor"
             android:textSize="24sp" />
@@ -189,6 +201,7 @@
             android:layout_row="3"
             android:layout_column="0"
             android:layout_columnWeight="1"
+            android:backgroundTint="@color/btncolor"
             android:text="1"
             android:textColor="@color/TextColor"
             android:textSize="24sp" />
@@ -200,6 +213,7 @@
             android:layout_row="3"
             android:layout_column="1"
             android:layout_columnWeight="1"
+            android:backgroundTint="@color/btncolor"
             android:text="2"
             android:textColor="@color/TextColor"
             android:textSize="24sp" />
@@ -211,6 +225,7 @@
             android:layout_row="3"
             android:layout_column="2"
             android:layout_columnWeight="1"
+            android:backgroundTint="@color/btncolor"
             android:text="3"
             android:textColor="@color/TextColor"
             android:textSize="24sp" />
@@ -224,6 +239,7 @@
             android:layout_rowWeight="1"
             android:layout_column="3"
             android:layout_columnWeight="1"
+            android:backgroundTint="@color/btncolor"
             android:text="="
             android:textColor="@color/TextColor"
             android:textSize="24sp" />
@@ -236,6 +252,7 @@
             android:layout_column="0"
             android:layout_columnSpan="2"
             android:layout_columnWeight="1"
+            android:backgroundTint="@color/btncolor"
             android:text="0"
             android:textColor="@color/TextColor"
             android:textSize="24sp" />
@@ -247,12 +264,32 @@
             android:layout_row="4"
             android:layout_column="2"
             android:layout_columnWeight="1"
+            android:backgroundTint="@color/btncolor"
             android:text="."
             android:textColor="@color/TextColor"
             android:textSize="24sp" />
 
     </GridLayout>
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="180dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="21dp"
+        android:gravity="center"
+        android:text="Numora"
+        android:textColor="@color/TextColor"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textdisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.553" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
