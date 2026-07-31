@@ -15,8 +15,12 @@ class MainActivity : AppCompatActivity() {
     var firstnumber:Double=0.0
     var secondnumber:Double=0.0
 
+    var dotcontrol:Boolean=true
     var status:String?=null
     var operator:Boolean=false
+    var history:String?=null
+    var current:String?=null
+    var temp=0.0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -54,18 +58,35 @@ class MainActivity : AppCompatActivity() {
         mainBinding.btn9.setOnClickListener {
             numberentered("9")
         }
-
+        mainBinding.dot.setOnClickListener {
+            if(dotcontrol)
+            {
+                number= if(number==null)
+                {
+                    "0."
+                }
+                else{
+                    "${number}."
+                }
+                mainBinding.textresult.text=number
+            }
+            else
+            {
+                dotcontrol=false
+            }
+        }
         mainBinding.btndel.setOnClickListener {
-
+            number = number?.dropLast(1)
+            mainBinding.textresult.text = number.orEmpty()
         }
         mainBinding.btnAC.setOnClickListener{
-            mainBinding.textdisplay.text=""
-            mainBinding.textresult.text=""
-            firstnumber=0.0
-            secondnumber=0.0
+            buttonAc()
         }
         mainBinding.btnplus.setOnClickListener{
+            temp=mainBinding.textresult.text.toString().toDouble()
+            mainBinding.textdisplay.text=temp.toString()
             if(operator){
+
                 when(status){
                     "Multiplication"->multiply()
                     "addition"->plus()
@@ -77,9 +98,12 @@ class MainActivity : AppCompatActivity() {
             operator=false
             status="addition"
             number=null
+            dotcontrol=true
         }
         mainBinding.btnminus.setOnClickListener{
+
             if(operator){
+
                 when(status){
                     "Multiplication"->multiply()
                     "addition"->plus()
@@ -91,10 +115,12 @@ class MainActivity : AppCompatActivity() {
             operator=false
             status="subtration"
             number=null
-
+            dotcontrol=true
         }
         mainBinding.btnDiv.setOnClickListener{
+
             if(operator){
+
                 when(status){
                     "Multiplication"->multiply()
                     "addition"->plus()
@@ -106,10 +132,12 @@ class MainActivity : AppCompatActivity() {
             operator=false
             status="division"
             number=null
-
+            dotcontrol=true
         }
         mainBinding.btnmulti.setOnClickListener{
+
             if(operator){
+
                 when(status){
                     "Multiplication"->multiply()
                     "addition"->plus()
@@ -121,6 +149,7 @@ class MainActivity : AppCompatActivity() {
             operator=false
             status="Multiplication"
             number=null
+            dotcontrol=true
         }
 
         mainBinding.btnequal.setOnClickListener {
@@ -181,5 +210,14 @@ class MainActivity : AppCompatActivity() {
             firstnumber/=secondnumber
             mainBinding.textresult.text=firstnumber.toString()
         }
+    }
+    fun buttonAc()
+    {
+        number=null
+        status=null
+        firstnumber=0.0
+        secondnumber=0.0
+        mainBinding.textresult.text=""
+        mainBinding.textdisplay.text=""
     }
 }
